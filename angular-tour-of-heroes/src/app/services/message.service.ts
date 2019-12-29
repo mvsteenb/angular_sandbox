@@ -10,7 +10,7 @@ export class MessageService {
   constructor() { }
 
   add(message: string) {
-    this.messages.push(message);
+    this.messages.push(message); 
   }
 
   clear() {

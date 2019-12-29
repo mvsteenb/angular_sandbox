@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Hero } from './hero';
+import { Hero } from '../model/hero';
 //import { HEROES } from './mock-heroes';
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class HeroService {
+export class HeroService { 
 
   private heroesUrl = 'api/heroes';
   httpOptions = {
